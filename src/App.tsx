@@ -45,7 +45,7 @@ function App() {
   const [error, setError] = useState('');
   const [movieList, setMovieList] = useState<Movie[]>([]);
   const [loading, setLoading] = useState(false);
-const [trendingMovies, setTrendingMovies] = useState<MovieDocument[]>([]);
+  const [trendingMovies, setTrendingMovies] = useState<MovieDocument[]>([]);
 
   useDebounce(() => setDebouncedSearchTerm(searchMovie), 500, [searchMovie])
 
